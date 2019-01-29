@@ -27,6 +27,18 @@ input[type=text], select {
   padding: 20px;
 }
 
+#ep9{
+  border-radius: 5px;
+  background-color: #F5F5DC;
+  padding: 20px;
+}
+
+#ep11{
+  border-radius: 5px;
+  background-color: 	#F5DEB3;
+  padding: 20px;
+}
+
 .is-toggled{
   background: #A52A2A
 }
