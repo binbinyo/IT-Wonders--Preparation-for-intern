@@ -9,33 +9,9 @@ input[type=text], select {
   background-color: white;
 }
 
-#ep1 {
-  border-radius: 5px;
-  background-color: #FFF8DC;
-  padding: 20px;
-}
-
-#ep3{
+#app{
   border-radius: 5px;
   background-color: #F5F5DC;
-  padding: 20px;
-}
-
-#ep6{
-  border-radius: 5px;
-  background-color: #FFFACD;
-  padding: 20px;
-}
-
-#ep9{
-  border-radius: 5px;
-  background-color: #F5F5DC;
-  padding: 20px;
-}
-
-#ep11{
-  border-radius: 5px;
-  background-color: 	#F5DEB3;
   padding: 20px;
 }
 
