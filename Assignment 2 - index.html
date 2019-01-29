@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons' rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.css" rel="stylesheet">
+
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
@@ -18,39 +20,50 @@
   <div id="ep1">
     <h2> The value of your below input (yes! you can change it): {{message}}</h2>
     <input type="text" id="input" v-model="message">
+
   </div>
-  
-  <div id= "ep3">
+
+  <div id="ep3">
     <h2> This is Episode 3 TO 5 where you can add name for once only</h2>
     <ul>
       <li v-for="name in names" v-text="name"></li>
     </ul>
-    
+
     <input id="input" type="text" v-model="newName">
-    <button :disabled="active" :class="{'is-toggled':isToggled}" :title="title" @click="addName"> CLICK me ->Add Name </button>    
+    <button :disabled="active" :class="{'is-toggled':isToggled}" :title="title" @click="addName"> CLICK me ->Add Name </button>
+
   </div>
-  
-  <div id = "ep6">
-        <h2>Incomplete Tasks</h2>
+
+  <div id="ep6">
+    <h2> This is Episode 6 where you can select the checkbox</h2>
+    <h3>Incomplete Tasks</h3>
     <ul v-if="incompleteTasks[0]">
-        <li v-for="task in incompleteTasks">
-            <label>
+      <li v-for="task in incompleteTasks">
+        <label>
                 <input type="checkbox" v-model="task.isComplete"> {{task.description}}
             </label>
-        </li>
+      </li>
     </ul>
     <p v-else class="success"><b>Congratulation!!! All your tasks are completed.</b></p>
-    <h2>Completed Tasks</h2>
+    <h3>Completed Tasks</h3>
     <ul v-if="completeTasks[0]">
-        <li v-for="task in completeTasks">
-            <label>
+      <li v-for="task in completeTasks">
+        <label>
                 <input type="checkbox" v-model="task.isComplete"> {{task.description}}
             </label>
-        </li>
+      </li>
     </ul>
-    
+
   </div>
-  
+
+  <div id="ep9">
+
+    <h1> This is episode 9</h1>
+
+    <messages title="M . O . N . D . A . Y" body=" Always believe something wonderful is about to happen."></messages>
+    <messages title="T . U . E . S . D . A . Y" body="Tuesday isn't so bad...It's a sign that I've somehow survived Monday."></messages>
+  </div>
+
 </body>
 
 </html>
