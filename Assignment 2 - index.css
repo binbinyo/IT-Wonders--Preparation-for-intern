@@ -21,6 +21,36 @@ input[type=text], select {
   padding: 20px;
 }
 
-.is-toggled{background: green}
+#ep6{
+  border-radius: 5px;
+  background-color: #FFFACD;
+  padding: 20px;
+}
 
+.is-toggled{
+  background: #A52A2A
+}
 
+button {
+  background-color: white; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 50x;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+label {
+    display: inline-block;
+    cursor: pointer;
+    margin-bottom: 8px;
+}
+
+.success {
+    color: green;
+}
