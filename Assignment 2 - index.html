@@ -24,7 +24,7 @@
   </div>
 
   <div id="ep3">
-    <h2> This is Episode 3 TO 5 where you can add name for once only</h2>
+    <h2> This is Episode 3 TO 5 where you can add name for once only</h2><br>
     <ul>
       <li v-for="name in names" v-text="name"></li>
     </ul>
@@ -35,7 +35,7 @@
   </div>
 
   <div id="ep6">
-    <h2> This is Episode 6 where you can select the checkbox</h2>
+    <h2> This is Episode 6 where you can select the checkbox</h2><br>
     <h3>Incomplete Tasks</h3>
     <ul v-if="incompleteTasks[0]">
       <li v-for="task in incompleteTasks">
@@ -58,10 +58,29 @@
 
   <div id="ep9">
 
-    <h1> This is episode 9</h1>
+    <h1> This is episode 9. You can click the cross and see what is happening</h1><br>
 
     <messages title="M . O . N . D . A . Y" body=" Always believe something wonderful is about to happen."></messages>
     <messages title="T . U . E . S . D . A . Y" body="Tuesday isn't so bad...It's a sign that I've somehow survived Monday."></messages>
+
+    <modal v-if="showModal" @close="showModal=false"></modal>
+    <button @click="showModal=true">Show Modal</button>
+
+  </div>
+
+  <div id="ep11">
+
+    <tabs>
+      <tab name="About Us" :selected="true">
+
+        <h1>We are passionate programmer</h1><br>
+      </tab>
+
+      <tab name="Team">
+        <h1>three of us are wudi, chewbacca and han solo</h1><br>
+      </tab>
+    </tabs>
+
   </div>
 
 </body>
