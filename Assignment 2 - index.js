@@ -29,4 +29,33 @@ new Vue({
   }
 });
 
+new Vue({
+    el: '#ep6',
+
+    data: {
+        tasks: [{
+            description: 'Assignment 1',
+            isComplete: false
+        }, {
+            description: 'Assignment 2',
+            isComplete: false
+        }, {
+            description: 'Report on first day',
+            isComplete: false
+        }, {
+            description: 'Do House Chores',
+            isComplete: false
+        }]
+    },
+
+    computed: {
+        incompleteTasks() {
+                return this.tasks.filter(task => !task.isComplete)
+        },
+        completeTasks() {
+            return this.tasks.filter(task => task.isComplete)
+        }
+    }
+})
+
 
